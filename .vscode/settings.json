@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        ".gitignore": true,
+        ".vscode": true,
+        "*.elf": true,
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "overrideName": true,
+            "path": "flatpak-spawn",
+            "icon": "terminal-bash",
+            "args": ["--host", "--watch-bus", "--", "toolbox", "run", "-r", "38", "bash", "-c", "export PS1='$ '; bash --norc \"$@\"", "--"]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.tabs.description": "${task}"
+}
